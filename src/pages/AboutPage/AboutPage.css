@@ -1,0 +1,15 @@
+.aboutpage {
+  background-color: var(--clr-5);
+  min-height: calc(100vh - 130px);
+  padding: 30px 0;
+}
+
+.aboutpage a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aboutpage article {
+  margin-bottom: 20px;
+}

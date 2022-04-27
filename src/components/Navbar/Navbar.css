@@ -1,0 +1,48 @@
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--clr-1);
+  color: var(--clr-3);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.todos-pending-icon {
+  background-color: var(--clr-3);
+  color: var(--clr-4);
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+}
+
+.navbar a.active {
+  color: var(--clr-5);
+}
+
+.nav-actions a {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 570px) {
+  .navbar .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

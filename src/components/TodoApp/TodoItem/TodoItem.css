@@ -1,0 +1,82 @@
+.card.todo-item {
+  margin: 0;
+  position: relative;
+  padding: 10px;
+
+  max-width: 500px;
+  margin: 30px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+@media (max-width: 570px) {
+  .card.todo-item {
+    max-width: 300px;
+  }
+}
+
+.card.todo-item.completed {
+  /* opacity: 0.65; */
+  background-color: var(--clr-3);
+}
+
+.card.todo-item span {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: var(--clr-3);
+  color: var(--clr-5);
+  border-radius: var(--b-radius);
+  padding: 5px;
+  font-size: 0.6rem;
+}
+
+.card.todo-item.completed span {
+  background-color: var(--clr-4);
+  color: var(--clr-1);
+}
+
+.card.todo-item.completed input {
+  background-color: var(--clr-3);
+  color: #ddd;
+}
+
+.todo-item input {
+  margin: 15px 0;
+
+  width: 80%;
+  margin: 0 15px;
+  border: none;
+  border-bottom: 1px solid transparent;
+  outline: none;
+  font-size: 0.87rem;
+  color: var(--clr-1);
+
+  font-family: inherit;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #fff;
+}
+
+.todo-item input:focus,
+.todo-item input:active {
+  font-style: italic;
+  color: var(--clr-3);
+}
+
+.todo-item-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-item-actions .btn {
+  padding: 5px;
+  font-size: 13px;
+}
+
+.card.todo-item.completed .todo-item-actions .btn {
+  color: var(--clr-4);
+}

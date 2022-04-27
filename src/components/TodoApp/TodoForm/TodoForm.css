@@ -1,0 +1,33 @@
+.card.todo-form {
+  margin: 20px auto;
+  padding: 15px 20px;
+  max-width: 500px;
+}
+
+.card.todo-form form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card.todo-form h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card.todo-form form input {
+  flex: 1;
+  margin-right: 20px;
+  padding: 5px;
+  border: none;
+  background-color: var(--clr-5);
+  color: var(--clr-1);
+  border-radius: 5px;
+  font-family: inherit;
+  outline: none;
+}
+
+.card.todo-form form input:active,
+.card.todo-form form input:focus {
+  background-color: var(--clr-4);
+}

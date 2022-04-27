@@ -1,0 +1,39 @@
+.alert {
+  font-size: 13px;
+
+  margin: 10px 0;
+
+  position: absolute;
+
+  left: 50vw;
+  transform: translate(-50%, -30%);
+  background-color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  opacity: 0;
+  animation: alert 0.3s ease-in forwards;
+}
+
+@keyframes alert {
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.alert p {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.alert-success {
+  color: rgb(47, 77, 198);
+  background-color: rgb(199, 208, 244);
+  border-left: 2px solid rgb(47, 77, 198);
+}
+
+.alert-danger {
+  color: #fff;
+  background-color: rgb(206, 142, 244);
+  border-left: 2px solid rgb(166, 70, 222);
+}
